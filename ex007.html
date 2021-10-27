@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM parte 2</title>
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/png">
+    <style>
+        body{
+            font: normal 18px Arial;
+        }
+        input{
+            font: normal 18px Arial;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <hr>
+    <input type="number" name="primeiro" id="primeiro">
+    <input type="number" name="segundo" id="segundo">
+    <input type="button" value="somar">
+    <div id="banana">Resultado</div>
+    <script>
+        var a = window.document.getElementsByTagName("input")[2]
+        a.addEventListener('click', somar)
+        function somar(){
+            var n1 = Number(window.document.getElementById("primeiro").value)
+            var n2 = Number(window.document.getElementById("segundo").value)
+            var soma = n1 + n2
+            var res = window.document.querySelector("div#banana")
+            res.innerHTML = `A soma de ${n1} e ${n2} é <strong>${soma}</strong>`
+        }
+    </script>
+</body>
+</html>

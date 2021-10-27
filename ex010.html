@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro?</title>
+</head>
+<body>
+    <h1>Verificador de BR</h1>
+    Informe seu país:<input type="text" name="nacionalidade" id="nac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="ver">Situação</div>
+    <script>
+        function verificar(){
+            var na = window.document.getElementById("nac").value
+            var sit = window.document.getElementById("ver")
+            if (na == 'Brasil'){
+                sit.innerHTML = 'Você é <strong>Brasileiro</strong>!'
+            } else {
+                sit.innerHTML = 'Você é <strong>gringo</strong>.'
+            }
+        }
+    </script>
+</body>
+</html>

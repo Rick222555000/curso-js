@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício de JavaScript 2</title>
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <!--Assim faz um comentário em HTML-->
+    <!--Abaixo temos a css-->
+    <style> 
+        /*Assim faz um comentário em CSS*/
+        body {
+            background-color: rgb(247, 164, 247);
+            font: normal 12pt Arial;
+            color: white;
+        }
+        h1 {
+            color: black;
+        }
+        p {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript testes</h1>
+    <hr>
+    <p>Olá, mundo!</p>
+    <p>Maldição me perdoa, por favor!</p>
+    <p>Aproveite este arquivo para teste. &#x2764;&#xFE0F;</p>
+    <img src="imagens/logo.png" alt="Meu logo">
+    <!--Aqui ficará a parte do JavaScript-->
+    <script>
+        // assim que faz um comentário JS
+        //window.alert("Minha primeira alerta!"); //Vai dá um alerta.
+        //window.confirm("Quer aprender JS?"); //janela com "ok" e "cancel."
+        var nome = window.prompt("Digite seu nome:"); //janela de pergunta.
+        var n1 = Number(window.prompt("Digite um número:"));
+        var n2 = Number(window.prompt("Digite outro número:"));
+        var s = n1 + n2
+        window.alert("É um prazer em te conhecer, " + nome + "!"); //Concatena
+    window.alert(`A soma é: ${s}`)
+    </script>
+</body>
+</html>
